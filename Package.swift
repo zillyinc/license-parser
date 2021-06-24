@@ -13,11 +13,17 @@ let package = Package(
         ),
     ],
     dependencies: [
+        .package(name: "Quick", url: "https://github.com/Quick/Quick", from: "3.1.2"),
+        .package(name: "Nimble", url: "https://github.com/Quick/nimble", from: "9.0.0"),
     ],
     targets: [
         .target(
             name: "LicenseParser",
             dependencies: []
+        ),
+        .testTarget(
+            name: "LicenseParserTests",
+            dependencies: ["LicenseParser", "Quick", "Nimble"]
         ),
     ]
 )

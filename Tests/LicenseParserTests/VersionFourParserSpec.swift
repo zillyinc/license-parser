@@ -586,7 +586,7 @@ class VersionFourParserSpec: QuickSpec {
 
             let formatter = DateFormatter()
             formatter.dateFormat = "MMddyyyy"
-            let expectedDate = formatter.date(from: "04072021")
+            let expectedDate = formatter.date(from: "04072030")
 
             expect(result.expirationDate).to(equal(expectedDate))
           }
@@ -665,7 +665,7 @@ class VersionFourParserSpec: QuickSpec {
       "ANSI 636002040002DL00410250ZM02910036DLDCAD\n" +
       "DCBB\n" +
       "DCDNONE\n" +
-      "DBA04072021\n" +
+      "DBA04072030\n" +
       "DCSPUBLIC\n" +
       "DACJOHN\n" +
       "DADQUINCY\n" +
