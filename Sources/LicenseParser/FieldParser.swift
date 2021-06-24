@@ -265,7 +265,8 @@ public class FieldParser: FieldParsing {
     - Returns: An optional value parsed out of the raw data
   */
   public func parseMiddleName() -> String? {
-    return parseString(key: "middleName")
+    let middleName = parseString(key: "middleName")
+    return middleName?.caseInsensitiveCompare("NONE") == .orderedSame ? nil : middleName
   }
 
   /**

@@ -25,5 +25,14 @@ class DriverLicenseNameSpec: QuickSpec{
         expect(result.suffix).to(equal(.second))
       }
     }
+
+    describe("when the middle name is not present") {
+        it("should return nil") {
+            let sut = Parser(data: "DADNONE")
+            let result = sut.parse()
+
+            expect(result.middleName).to(beNil())
+        }
+    }
   }
 }
