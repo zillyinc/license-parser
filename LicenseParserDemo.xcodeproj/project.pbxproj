@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0149884E1D24319400DD57AE /* LicenseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0149884C1D24319400DD57AE /* LicenseSpec.swift */; };
+		0157C3AB1D30080900AACBB3 /* VersionParsingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0157C3AA1D30080900AACBB3 /* VersionParsingSpec.swift */; };
+		0167AFB91D0A37C100B8DC5B /* VersionEightParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167AFB81D0A37C100B8DC5B /* VersionEightParserSpec.swift */; };
+		0167AFBB1D0A384B00B8DC5B /* VersionOneParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167AFBA1D0A384B00B8DC5B /* VersionOneParserSpec.swift */; };
+		0171C8CD1D3464ED003A22F3 /* VersionThreeParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171C8CC1D3464ED003A22F3 /* VersionThreeParserSpec.swift */; };
+		0171C8D31D349F0C003A22F3 /* HeightParsingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171C8D21D349F0C003A22F3 /* HeightParsingSpec.swift */; };
+		01A9D6141D34053B000219C0 /* LineEndingsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A9D6131D34053B000219C0 /* LineEndingsSpec.swift */; };
+		01AEE6011D24771B000876DF /* DriverLicenseNameSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AEE6001D24771B000876DF /* DriverLicenseNameSpec.swift */; };
+		01BCAFC71D12234B006E0C7C /* VersionFourParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BCAFC61D12234B006E0C7C /* VersionFourParserSpec.swift */; };
+		01BCAFCB1D122723006E0C7C /* FieldParsingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BCAFCA1D122723006E0C7C /* FieldParsingSpec.swift */; };
+		01E018771D1243E30038E929 /* VersionFiveParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E018761D1243E30038E929 /* VersionFiveParserSpec.swift */; };
+		607FACEC1AFB9204008FA782 /* LicenseParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* LicenseParserSpec.swift */; };
+		B133B2DC268413F60059D251 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = B133B2DB268413F60059D251 /* Quick */; };
+		B133B2DF2684143D0059D251 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = B133B2DE2684143D0059D251 /* Nimble */; };
+		B133B2ED268418390059D251 /* LicenseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B133B2EB268418390059D251 /* LicenseParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B133B2FE2684184F0059D251 /* VersionOneFieldParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2F12684184F0059D251 /* VersionOneFieldParser.swift */; };
+		B133B2FF2684184F0059D251 /* FieldMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2F22684184F0059D251 /* FieldMapper.swift */; };
+		B133B3002684184F0059D251 /* VersionThreeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2F32684184F0059D251 /* VersionThreeParser.swift */; };
+		B133B3012684184F0059D251 /* FieldParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2F42684184F0059D251 /* FieldParser.swift */; };
+		B133B3022684184F0059D251 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2F52684184F0059D251 /* License.swift */; };
+		B133B3032684184F0059D251 /* VersionFiveParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2F62684184F0059D251 /* VersionFiveParser.swift */; };
+		B133B3042684184F0059D251 /* LicenseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2F72684184F0059D251 /* LicenseParser.swift */; };
+		B133B3052684184F0059D251 /* enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2F82684184F0059D251 /* enum.swift */; };
+		B133B3062684184F0059D251 /* VersionTwoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2F92684184F0059D251 /* VersionTwoParser.swift */; };
+		B133B3072684184F0059D251 /* AcceptanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2FA2684184F0059D251 /* AcceptanceCalculator.swift */; };
+		B133B3082684184F0059D251 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2FB2684184F0059D251 /* Regex.swift */; };
+		B133B3092684184F0059D251 /* VersionEightParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2FC2684184F0059D251 /* VersionEightParser.swift */; };
+		B133B30A2684184F0059D251 /* VersionFourParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2FD2684184F0059D251 /* VersionFourParser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0149884C1D24319400DD57AE /* LicenseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseSpec.swift; sourceTree = "<group>"; };
+		0157C3AA1D30080900AACBB3 /* VersionParsingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionParsingSpec.swift; sourceTree = "<group>"; };
+		0167AFB81D0A37C100B8DC5B /* VersionEightParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionEightParserSpec.swift; sourceTree = "<group>"; };
+		0167AFBA1D0A384B00B8DC5B /* VersionOneParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionOneParserSpec.swift; sourceTree = "<group>"; };
+		0171C8CC1D3464ED003A22F3 /* VersionThreeParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionThreeParserSpec.swift; sourceTree = "<group>"; };
+		0171C8D21D349F0C003A22F3 /* HeightParsingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeightParsingSpec.swift; sourceTree = "<group>"; };
+		01A9D6131D34053B000219C0 /* LineEndingsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineEndingsSpec.swift; sourceTree = "<group>"; };
+		01AEE6001D24771B000876DF /* DriverLicenseNameSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverLicenseNameSpec.swift; sourceTree = "<group>"; };
+		01BCAFC61D12234B006E0C7C /* VersionFourParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionFourParserSpec.swift; sourceTree = "<group>"; };
+		01BCAFCA1D122723006E0C7C /* FieldParsingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldParsingSpec.swift; sourceTree = "<group>"; };
+		01E018761D1243E30038E929 /* VersionFiveParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionFiveParserSpec.swift; sourceTree = "<group>"; };
+		607FACE51AFB9204008FA782 /* LicenseParserDemo_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LicenseParserDemo_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* LicenseParserSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseParserSpec.swift; sourceTree = "<group>"; };
+		B133B2E9268418390059D251 /* LicenseParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LicenseParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B133B2EB268418390059D251 /* LicenseParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LicenseParser.h; sourceTree = "<group>"; };
+		B133B2EC268418390059D251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B133B2F12684184F0059D251 /* VersionOneFieldParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VersionOneFieldParser.swift; path = Sources/LicenseParser/VersionOneFieldParser.swift; sourceTree = SOURCE_ROOT; };
+		B133B2F22684184F0059D251 /* FieldMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FieldMapper.swift; path = Sources/LicenseParser/FieldMapper.swift; sourceTree = SOURCE_ROOT; };
+		B133B2F32684184F0059D251 /* VersionThreeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VersionThreeParser.swift; path = Sources/LicenseParser/VersionThreeParser.swift; sourceTree = SOURCE_ROOT; };
+		B133B2F42684184F0059D251 /* FieldParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FieldParser.swift; path = Sources/LicenseParser/FieldParser.swift; sourceTree = SOURCE_ROOT; };
+		B133B2F52684184F0059D251 /* License.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = License.swift; path = Sources/LicenseParser/License.swift; sourceTree = SOURCE_ROOT; };
+		B133B2F62684184F0059D251 /* VersionFiveParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VersionFiveParser.swift; path = Sources/LicenseParser/VersionFiveParser.swift; sourceTree = SOURCE_ROOT; };
+		B133B2F72684184F0059D251 /* LicenseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LicenseParser.swift; path = Sources/LicenseParser/LicenseParser.swift; sourceTree = SOURCE_ROOT; };
+		B133B2F82684184F0059D251 /* enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = enum.swift; path = Sources/LicenseParser/enum.swift; sourceTree = SOURCE_ROOT; };
+		B133B2F92684184F0059D251 /* VersionTwoParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VersionTwoParser.swift; path = Sources/LicenseParser/VersionTwoParser.swift; sourceTree = SOURCE_ROOT; };
+		B133B2FA2684184F0059D251 /* AcceptanceCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AcceptanceCalculator.swift; path = Sources/LicenseParser/AcceptanceCalculator.swift; sourceTree = SOURCE_ROOT; };
+		B133B2FB2684184F0059D251 /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Regex.swift; path = Sources/LicenseParser/Regex.swift; sourceTree = SOURCE_ROOT; };
+		B133B2FC2684184F0059D251 /* VersionEightParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VersionEightParser.swift; path = Sources/LicenseParser/VersionEightParser.swift; sourceTree = SOURCE_ROOT; };
+		B133B2FD2684184F0059D251 /* VersionFourParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VersionFourParser.swift; path = Sources/LicenseParser/VersionFourParser.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		607FACE21AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B133B2DC268413F60059D251 /* Quick in Frameworks */,
+				B133B2DF2684143D0059D251 /* Nimble in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B133B2E6268418390059D251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		607FACC71AFB9204008FA782 = {
+			isa = PBXGroup;
+			children = (
+				607FACE81AFB9204008FA782 /* Tests */,
+				B133B2EA268418390059D251 /* LicenseParser */,
+				607FACD11AFB9204008FA782 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		607FACD11AFB9204008FA782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				607FACE51AFB9204008FA782 /* LicenseParserDemo_Tests.xctest */,
+				B133B2E9268418390059D251 /* LicenseParser.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		607FACE81AFB9204008FA782 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0149884C1D24319400DD57AE /* LicenseSpec.swift */,
+				01BCAFC61D12234B006E0C7C /* VersionFourParserSpec.swift */,
+				607FACEB1AFB9204008FA782 /* LicenseParserSpec.swift */,
+				607FACE91AFB9204008FA782 /* Supporting Files */,
+				0167AFB81D0A37C100B8DC5B /* VersionEightParserSpec.swift */,
+				0167AFBA1D0A384B00B8DC5B /* VersionOneParserSpec.swift */,
+				01BCAFCA1D122723006E0C7C /* FieldParsingSpec.swift */,
+				01E018761D1243E30038E929 /* VersionFiveParserSpec.swift */,
+				01AEE6001D24771B000876DF /* DriverLicenseNameSpec.swift */,
+				0157C3AA1D30080900AACBB3 /* VersionParsingSpec.swift */,
+				01A9D6131D34053B000219C0 /* LineEndingsSpec.swift */,
+				0171C8CC1D3464ED003A22F3 /* VersionThreeParserSpec.swift */,
+				0171C8D21D349F0C003A22F3 /* HeightParsingSpec.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		607FACE91AFB9204008FA782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				607FACEA1AFB9204008FA782 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B133B2EA268418390059D251 /* LicenseParser */ = {
+			isa = PBXGroup;
+			children = (
+				B133B2EB268418390059D251 /* LicenseParser.h */,
+				B133B2EC268418390059D251 /* Info.plist */,
+				B133B2FA2684184F0059D251 /* AcceptanceCalculator.swift */,
+				B133B2F82684184F0059D251 /* enum.swift */,
+				B133B2F22684184F0059D251 /* FieldMapper.swift */,
+				B133B2F42684184F0059D251 /* FieldParser.swift */,
+				B133B2F52684184F0059D251 /* License.swift */,
+				B133B2F72684184F0059D251 /* LicenseParser.swift */,
+				B133B2FB2684184F0059D251 /* Regex.swift */,
+				B133B2FC2684184F0059D251 /* VersionEightParser.swift */,
+				B133B2F62684184F0059D251 /* VersionFiveParser.swift */,
+				B133B2FD2684184F0059D251 /* VersionFourParser.swift */,
+				B133B2F12684184F0059D251 /* VersionOneFieldParser.swift */,
+				B133B2F32684184F0059D251 /* VersionThreeParser.swift */,
+				B133B2F92684184F0059D251 /* VersionTwoParser.swift */,
+			);
+			path = LicenseParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B133B2E4268418390059D251 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B133B2ED268418390059D251 /* LicenseParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		607FACE41AFB9204008FA782 /* LicenseParserDemo_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "LicenseParserDemo_Tests" */;
+			buildPhases = (
+				607FACE11AFB9204008FA782 /* Sources */,
+				607FACE21AFB9204008FA782 /* Frameworks */,
+				607FACE31AFB9204008FA782 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LicenseParserDemo_Tests;
+			packageProductDependencies = (
+				B133B2DB268413F60059D251 /* Quick */,
+				B133B2DE2684143D0059D251 /* Nimble */,
+			);
+			productName = Tests;
+			productReference = 607FACE51AFB9204008FA782 /* LicenseParserDemo_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B133B2E8268418390059D251 /* LicenseParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B133B2EE268418390059D251 /* Build configuration list for PBXNativeTarget "LicenseParser" */;
+			buildPhases = (
+				B133B2E4268418390059D251 /* Headers */,
+				B133B2E5268418390059D251 /* Sources */,
+				B133B2E6268418390059D251 /* Frameworks */,
+				B133B2E7268418390059D251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LicenseParser;
+			productName = LicenseParser;
+			productReference = B133B2E9268418390059D251 /* LicenseParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		607FACC81AFB9204008FA782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = CocoaPods;
+				TargetAttributes = {
+					607FACE41AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					B133B2E8268418390059D251 = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "LicenseParserDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 607FACC71AFB9204008FA782;
+			packageReferences = (
+				B133B2DA268413F60059D251 /* XCRemoteSwiftPackageReference "Quick" */,
+				B133B2DD2684143D0059D251 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
+			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				607FACE41AFB9204008FA782 /* LicenseParserDemo_Tests */,
+				B133B2E8268418390059D251 /* LicenseParser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		607FACE31AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B133B2E7268418390059D251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		607FACE11AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E018771D1243E30038E929 /* VersionFiveParserSpec.swift in Sources */,
+				01AEE6011D24771B000876DF /* DriverLicenseNameSpec.swift in Sources */,
+				01BCAFC71D12234B006E0C7C /* VersionFourParserSpec.swift in Sources */,
+				01A9D6141D34053B000219C0 /* LineEndingsSpec.swift in Sources */,
+				01BCAFCB1D122723006E0C7C /* FieldParsingSpec.swift in Sources */,
+				0167AFB91D0A37C100B8DC5B /* VersionEightParserSpec.swift in Sources */,
+				0149884E1D24319400DD57AE /* LicenseSpec.swift in Sources */,
+				0171C8D31D349F0C003A22F3 /* HeightParsingSpec.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* LicenseParserSpec.swift in Sources */,
+				0157C3AB1D30080900AACBB3 /* VersionParsingSpec.swift in Sources */,
+				0171C8CD1D3464ED003A22F3 /* VersionThreeParserSpec.swift in Sources */,
+				0167AFBB1D0A384B00B8DC5B /* VersionOneParserSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B133B2E5268418390059D251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B133B3072684184F0059D251 /* AcceptanceCalculator.swift in Sources */,
+				B133B2FE2684184F0059D251 /* VersionOneFieldParser.swift in Sources */,
+				B133B30A2684184F0059D251 /* VersionFourParser.swift in Sources */,
+				B133B3012684184F0059D251 /* FieldParser.swift in Sources */,
+				B133B3052684184F0059D251 /* enum.swift in Sources */,
+				B133B3022684184F0059D251 /* License.swift in Sources */,
+				B133B3042684184F0059D251 /* LicenseParser.swift in Sources */,
+				B133B3032684184F0059D251 /* VersionFiveParser.swift in Sources */,
+				B133B2FF2684184F0059D251 /* FieldMapper.swift in Sources */,
+				B133B3062684184F0059D251 /* VersionTwoParser.swift in Sources */,
+				B133B3002684184F0059D251 /* VersionThreeParser.swift in Sources */,
+				B133B3082684184F0059D251 /* Regex.swift in Sources */,
+				B133B3092684184F0059D251 /* VersionEightParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		607FACED1AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		607FACEE1AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		607FACF31AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		607FACF41AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B133B2EF268418390059D251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RF8573ZW29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = LicenseParser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zilly.licenseparser.LicenseParser;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B133B2F0268418390059D251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RF8573ZW29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = LicenseParser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zilly.licenseparser.LicenseParser;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "LicenseParserDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACED1AFB9204008FA782 /* Debug */,
+				607FACEE1AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "LicenseParserDemo_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF31AFB9204008FA782 /* Debug */,
+				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B133B2EE268418390059D251 /* Build configuration list for PBXNativeTarget "LicenseParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B133B2EF268418390059D251 /* Debug */,
+				B133B2F0268418390059D251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B133B2DA268413F60059D251 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		B133B2DD2684143D0059D251 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B133B2DB268413F60059D251 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B133B2DA268413F60059D251 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		B133B2DE2684143D0059D251 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B133B2DD2684143D0059D251 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+}
